@@ -1,0 +1,87 @@
+.menu-mobile{
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-around;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1001;
+}
+
+.sub-menu-mobile {
+    padding: 20px 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    min-height: auto;
+    height: 900px;
+    width: 100%;
+    position: absolute;
+    overflow: scroll;
+    top: 0;
+    background-color: #24284d;
+}
+
+.container-header-submenu{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 100px;
+}
+
+.container-list-submenu{
+    height: 100px;
+    color: white;
+}
+
+.list-submenu {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    list-style: none;
+    min-height: auto;
+    width: 100%;
+}
+
+.list-submenu li{
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.list-expand-submenu{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.sub-submenu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.sub-submenu div{
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.container-button-cita{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.container-button-cita a{
+    background-color: #ff571c;
+    color: white;
+    border: 0;
+    border-radius: 20px 20px 0px 20px;
+    padding: 15px;
+    font-size: 20px;
+}
+

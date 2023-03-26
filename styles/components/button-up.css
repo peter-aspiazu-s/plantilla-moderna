@@ -1,0 +1,21 @@
+.button-up{
+    display: block;
+    position: fixed;
+    bottom: 20px;
+    left: 10px;
+    background-color: #ff571c;
+    border-radius: 100%;
+    border: 0;
+    z-index: 1003;
+}
+
+/* @media screen and (min-width: 600px) {
+    .button-up{
+        position: fixed;
+        bottom: 20px;
+        left: 10px;
+        background-color: #ff571c;
+        border-radius: 100%;
+        z-index: 1003;
+    }    
+} */

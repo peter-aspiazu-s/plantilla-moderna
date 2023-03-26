@@ -1,0 +1,110 @@
+.menu-desktop{
+    display: none;
+}
+
+
+
+@media screen and (min-width: 900px){
+    .menu-mobile{
+        display: none; 
+    }
+    
+    .menu-desktop{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        height: 100px;
+        position: fixed;
+        top: 0;
+        z-index: 1001;
+        color: white;
+    }
+
+    /* .container-logo-desktop{
+        flex-shrink: 0;
+    } */
+
+    .container-list-menu-desktop{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* flex-shrink: 1; */
+        width: 500px;
+        font-size: 20px;
+    }
+
+    /* .container-calendar-desktop{
+        flex-shrink: 0;
+    } */
+
+    .submenu-desktop{
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+
+    .container-submenu-desktop{
+        position: absolute;
+        top: 60px;
+        background-color: #24284d;
+        color: white;
+        width: 300px;
+        padding: 20px;
+        border-top: 3px solid #ff571c;
+    }
+
+    .container-submenu-desktop div{
+        margin-bottom: 20px;
+    }
+
+    .hover-icon-logo{
+        cursor: pointer;
+        width: 200px;
+    }
+
+    .hover-icon-logo:hover{
+        transform: scale(1.1);
+        transition: transform .3s;
+    }
+
+    .hover-menu-list{
+        cursor: pointer;
+    }
+
+    .hover-menu-list:hover{
+        color: #24284d;
+        transition: all .3s;
+    }
+
+    .navbar-icon-item-menu svg{
+        fill: white;
+    }
+
+    .hover-menu-list:hover .navbar-icon-item-menu svg{
+        fill: #24284d;
+        transition: all .3s;
+    }
+
+    .hover-submenu-list{
+        cursor: pointer;
+    }
+
+    .hover-submenu-list:hover{
+        color: #ff571c;
+        transition: all .3s;
+    }
+
+
+    /* estilos scroll */
+    .animation-scroll{
+        background-color: rgba(0, 0, 0, 0.5);
+        transition: all .3s;
+    }
+
+    .remove-animation-scroll{
+        background-color: transparent;
+        transition: all .3s;
+    }
+
+}

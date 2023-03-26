@@ -1,0 +1,140 @@
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.contact-information{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+}
+
+.contact-title{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.contact-description{
+    text-align: center;
+    font-size: 20px;
+}
+
+.contact-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-card{
+    width: 80%;
+    height: 250px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 5px 2px #ccc;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-card-name{
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #24284d;
+}
+
+.contact-card-position{
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #24284d;
+}
+
+.contact-number{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.contact-button{
+    font-size: 20px;
+    margin-bottom: 10px;
+    background-color: #ff571c;
+    color: white;
+    text-decoration: none;
+    padding: 20px 30px;
+    border-radius: 20px 20px 0px 20px;
+}
+
+
+@media screen and (min-width: 600px){
+
+    .contact-information{
+        margin: 40px 0px 80px 0;
+    }
+
+    .contact-title{
+        font-size: 35px;
+        margin-bottom: 25px;
+    }
+    
+    .contact-description{
+        font-size: 25px;
+    }
+
+    .contact-card{
+        width: 400px;
+        height: 400px;
+    }
+    
+    .contact-card-name{
+        font-size: 35px;
+        margin-bottom: 25px;
+    }
+    
+    .contact-card-position{
+        font-size: 25px;
+        margin-bottom: 25px;
+    }
+    
+    .contact-number{
+        font-size: 30px;
+        margin-bottom: 25px;
+    }
+
+    .contact-button{
+        font-size: 30px;
+    }
+}
+
+@media screen and (min-width: 900px){
+    .contact-card:hover{
+        background-color: #24284d;
+        transition: all .3s;
+    }
+
+    .contact-card:hover .contact-card-name{
+        color: white;
+    }
+
+    .contact-card:hover .contact-card-position{
+        color: white;
+    }
+
+    .contact-card:hover .contact-number{
+        color: white;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .contact-information{
+        width: 1000px;
+    }
+}

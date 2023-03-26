@@ -1,0 +1,104 @@
+.frecuent-questions{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 20px;
+}
+
+.frecuent-questions-container-image-button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.frecuent-questions-image{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.frecuent-questions-image img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+.frecuent-questions-container-image-button a{
+    margin: 0 auto;
+    background-color: #ff571c;
+    color: white;
+    border: 0;
+    border-radius: 20px 20px 0px 20px;
+    padding: 15px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.frecuent-questions-container-accordion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.frecuent-questions-container-accordion-title{
+    font-size: 35px;
+    font-weight: 600;
+    color: #24284d;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.frecuent-questions-container-accordion-description{
+    font-size: 20px;
+    color: #24284d;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+@media screen and (min-width: 600px){
+    .frecuent-questions-container-image-button a{
+        font-size: 30px;
+    }
+}
+
+@media screen and (min-width: 900px){
+    .frecuent-questions{
+        flex-direction: row;
+    }
+    
+    .frecuent-questions-container-image-button{
+        width: 100%;
+    }
+
+    .frecuent-questions-container-image-button a{
+        cursor: pointer;
+    }
+
+    .frecuent-questions-container-image-button a:hover{
+        background-color: #24284d;
+        transition: all .3s;
+    }
+
+    .frecuent-questions-container-accordion-title{
+        font-size: 40px;
+    }
+    
+    .frecuent-questions-container-accordion{
+        width: 100%;
+        padding: 0 30px;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .frecuent-questions{
+        width: 1200px;
+        margin: 0 auto;
+    }
+
+    .frecuent-questions-container-accordion-title{
+        font-size: 50px;
+    }
+    
+}

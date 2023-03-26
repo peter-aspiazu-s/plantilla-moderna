@@ -1,0 +1,170 @@
+.section-about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../../public/image/background-section-about-xl.webp");
+    background-size: cover;
+    width: 100%;
+    height: 1200px;
+    position: relative;
+}
+
+.section-about-gradient{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(36,40,77);
+    background: linear-gradient(32deg, rgba(36,40,77,0.4599089635854342) 36%, rgba(255,87,28,0.468312324929972) 50%);
+}
+
+.section-about-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0;
+}
+
+.section-about-title{
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.section-about-subtitle{
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.section-about-container-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.section-about-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    padding: 30px 20px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.section-about-ico{
+    margin-bottom: 15px;
+}
+
+.section-about-card-title{
+    font-size: 30px;
+    color: #24284d;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.section-about-card-description{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.section-about-box-radius-top{
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    top: -2px;
+    transform: rotate(180deg);
+}
+
+.section-about-box-radius-bottom{
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    bottom: -2px;
+}
+
+@media screen and (min-width: 600px){
+    .section-about{
+        height: 900px;
+    }
+
+    .section-about-title{
+        font-size: 50px;
+    }
+    
+    .section-about-subtitle{
+        font-size: 40px;
+    }
+
+    .section-about-container-info{
+        display: grid;
+        grid-template-areas: 
+        "a a"
+        "b c";
+        grid-gap: 10px;
+    }
+
+    .box1{
+        grid-area: a;
+    }   
+    .box2{
+        grid-area: b;
+    }   
+    .box3{
+        grid-area: c;
+    }   
+}
+
+@media screen and (min-width: 900px){
+
+    .section-about{
+        height: 700px;
+    }
+
+    .section-about-title{
+        font-size: 60px;
+    }
+    
+    .section-about-subtitle{
+        font-size: 40px;
+    }
+
+    .section-about-container-info{
+        grid-template-areas: 
+        "a b c";
+        grid-gap: 20px;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .section-about{
+        background-attachment: fixed;
+    }
+
+    .section-about-container{
+        width: 1000px;
+    }
+
+    .section-about-card{
+        cursor: pointer;
+        transition: all .3s;
+    }
+    .section-about-card:hover{
+        transform: scale(1.1);
+        background-color: #24284d;
+        color: white;
+    }
+
+    .section-about-card:hover .section-about-card-title{
+        color: white;
+        transition: all .3s;
+    }
+}

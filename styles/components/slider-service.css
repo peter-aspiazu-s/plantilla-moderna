@@ -1,0 +1,51 @@
+.slide-service .swiper {
+    width: 100%;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+  
+.slide-service .swiper-slide {
+  background-size: cover;
+  background-position: center;
+}
+  
+.slide-service .mySwiper2 {
+  height: 500px !important;
+  width: 100%;
+  margin-bottom: 30px;
+}
+  
+.slide-service .mySwiper {
+  height: 100px !important;
+  box-sizing: border-box;
+  padding: 10px 0;
+}
+  
+.slide-service .mySwiper .swiper-slide {
+  width: 100px !important;
+  height: 100% !important;
+  opacity: 0.4;
+}
+  
+.slide-service .mySwiper .swiper-slide-thumb-active {
+  opacity: 1;
+}
+  
+.slide-service .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media screen and (min-width: 600px){
+  .slide-service .swiper{
+      width: 550px;
+  }
+
+  .slide-service .mySwiper2 {
+      width: 550px !important;
+  }
+
+}

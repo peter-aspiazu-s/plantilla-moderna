@@ -1,0 +1,50 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@import url(./components/sidebar.css);
+@import url(./components/navbar.css);
+
+@import url(./components/main.css);
+
+@import url(./components/social-media.css);
+
+@import url(./components/button-up.css);
+
+@import url(./components/experience.css);
+
+@import url(./components/service-section.css);
+
+@import url(./components/section-about.css);
+
+@import url(./components/section-contact.css);
+
+@import url(./components/satisfied-customers.css);
+
+@import url(./components/frecuent-questions.css);
+
+@import url(./components/accordion.css);
+
+@import url(./components/footer.css);
+
+@import url(./components/slider-service.css);
+
+
+/* Service One */
+@import url(./components/service-one/section-service.css);
+
+
+/* Gallery */
+@import url(./components/gallery/gallery.css);
+
+
+/* About Us */
+@import url(./components/about/about-us.css);
+
+
+/* Contact */
+@import url(./components/contact/contact.css);
+
+
