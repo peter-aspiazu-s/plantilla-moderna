@@ -1,6 +1,6 @@
-export const scrollButtonUp = ( evento: any, scrollAnimation: number ) => {
+export const scrollButtonUp = ( target: HTMLAnchorElement, scrollAnimation: number ) => {
     
-    const element = evento.target;
+    const element = target;
     const id = element.getAttribute('href');
 
     window.scroll({

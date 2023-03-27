@@ -14,6 +14,7 @@ const AboutPage: NextPage = () => {
     <PlantillaLayout
         title='Nosotros'
         contentPage='Página con información de la empresa'
+        scrollAnimation={scrollAnimation}
     >
         <Main 
           title='Sobre nosotros'

@@ -11,6 +11,8 @@ import { SectionContact } from '../components/sectionContact';
 import { SatisfiedCustomers } from '../components/satisfiedCustomers';
 import { FrecuentQuestions } from '../components/frequentQuestions';
 
+import ImageGenteSonriendo from '../public/image/gente-sonriendo.webp';
+
 const Home: NextPage = () => {
 
   const [scrollAnimation, setScrollAnimation] = useState(0);
@@ -27,6 +29,7 @@ const Home: NextPage = () => {
       slogan='Una sonrisa crea un cambio positivo, buena impresión y es nuestra carta de presentación.'
       textBotton='Reserva una cita'
       backgroundImage='/image/background-home-xl.webp'
+      ImageGenteSonriendo={ImageGenteSonriendo}
       setScrollAnimation={setScrollAnimation} 
     />
 

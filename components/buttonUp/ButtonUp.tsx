@@ -7,9 +7,10 @@ interface Props{
 
 export const ButtonUp: FC<Props> = ({scrollAnimation}) => {
     
-    const handleClickButtonUp = (e:any) => {
+    const handleClickButtonUp = (e:React.MouseEvent<HTMLAnchorElement>) => {
         e.preventDefault();
-        scrollButtonUp(e, scrollAnimation);
+        const target = e.target as HTMLAnchorElement;
+        scrollButtonUp(target, scrollAnimation);
     };
 
 

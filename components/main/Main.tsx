@@ -1,15 +1,16 @@
 import {FC, useEffect} from 'react';
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 
 interface Props {
   title: string;
   slogan?: string;
   textBotton: string; 
   backgroundImage: string;
+  ImageGenteSonriendo?: StaticImageData;
   setScrollAnimation: React.Dispatch<number>;
 }
 
-import ImageGenteSonriendo from '../../public/image/gente-sonriendo.webp';
+
 import { navigationForm } from '../../helpers';
 
 export const Main: FC<Props> = ({ 
@@ -17,6 +18,7 @@ export const Main: FC<Props> = ({
   slogan,
   textBotton,
   backgroundImage,
+  ImageGenteSonriendo,
   setScrollAnimation 
 }) => {
 
@@ -68,9 +70,13 @@ export const Main: FC<Props> = ({
 
         <div className='main-capa-gradient'></div>
 
-        <div className='container-gente-sonriendo'>
-          <Image src={ImageGenteSonriendo} alt="imagen de personas sonriendo" className='image-gente-sonriendo' />
-        </div>
+        {
+          ImageGenteSonriendo &&
+          <div className='container-gente-sonriendo'>
+            <Image src={ImageGenteSonriendo} alt="imagen de personas sonriendo" className='image-gente-sonriendo' />
+          </div>
+        }
+
 
         <div
           className='main-box-radius'
